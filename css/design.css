@@ -1,0 +1,195 @@
+body{
+	margin: 30px;
+	background-color: #CCFFFF;
+}
+
+@media (min-width: 780px){
+	.main-content{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+}
+
+.header-content{
+	display: flex;
+	align-items: center;
+
+}
+
+.logo{
+	flex:3;
+}
+
+.logo h1{
+	font-size: 45px;
+	color: red;
+}
+
+.logo h1:hover{
+	letter-spacing: 5px;
+	text-shadow: 2px 2px #ff0000;
+}
+
+
+.nav-menu{
+	text-align: center;
+	flex: 1;
+}
+
+.nav-menu a{
+	font-size: 25px;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid red;
+	color: #eeedde;
+	background-color: #141e27;
+	border-radius: 5px;
+}
+
+.nav-menu a:hover{
+	font-size: 35px;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid black;
+	color: #eeedde;
+	background-color: #141e27;
+	border-radius: 5px;
+	box-shadow: 1px 2px 3px 1px grey;
+}
+
+
+
+.post{
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 4px 6px 20px 4px black;
+	margin-bottom: 40px;
+	
+
+}
+
+.post h1{
+	text-align: center;
+	color: green;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: arial;
+	text-transform: uppercase;
+	text-decoration: underline;
+	letter-spacing: 3px;
+}
+
+
+.post img{
+	border-radius: 15px;
+}
+
+.post p {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+	line-height: 25px;
+}
+
+.post:hover{
+	box-shadow: none;
+	background-color: green;
+	border-radius: 0px;
+}
+
+.my-team{
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-team{
+	width: 300px;
+	height: 300px;
+	box-shadow: 2px 3px 20px 5px grey;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.profile{
+	display: flex;
+	align-items: center;
+}
+.profile-picture{
+	flex: 1;
+}
+
+.profile-picture img{
+	width: 160px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+
+.profile-name{
+	flex: 1;
+}
+.social-icon{
+	display: flex;
+	align-items: center;
+}
+
+.facebook{
+	flex: 1;
+}
+
+.facebook img:hover{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.facebook img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.twitter{
+	flex: 1;
+}
+
+.twitter img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.instagram{
+	flex: 1;
+}
+.instagram img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.youtube{
+	flex: 1;
+}
+.youtube img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+
+.footer{
+	margin: 10px;
+	clear: left;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+}
