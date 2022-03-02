@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-layout{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 100px auto 100px ;
+            grid-template-areas:
+            "h h h h h h h h h h h h"
+            "m c c c c c c c c c c c"
+            "f f f f f f f f f f f f"
+            ;
+        }
+        .header{
+            grid-column: h;
+            background-color: aqua;
+        }
+        .content{
+            grid-column: c;
+            background-color: red;
+            padding: 10px;
+        }
+        .menu{
+            grid-column: m;
+            background-color: burlywood;
+        }
+        .footer{
+            grid-column: f;
+            background-color: brown;
+        }
+        
+            .main-content{
+	        display: flex;
+	        justify-content: space-around;
+	        flex-wrap: wrap;
+            }
+    
+
+            
+.post{
+    width: auto;
+    max-width: 200px;
+	overflow: hidden;
+	border-radius: 15px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 4px 6px 20px 4px black;
+	margin-bottom: 40px;
+	
+
+}
+
+.post h1{
+	text-align: center;
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+
+.post img{
+	border-radius: 15px;
+    height: 100px;
+    width: 150px;
+}
+
+.post p {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-layout">
+
+        <!--This div is for header-->
+        <div class="header">
+            
+        </div>
+        <div class="menu">Menu</div>
+        <div class="content">
+            <div class="main-content">
+                <div class="post">
+                    <h1>Cox's Bazar</h1>
+                    <img src="https://vromonguide.com/wp-content/uploads/mv-karnaphuli-express-ship.jpg">
+                    <p>Dummy Content Dummy Another Content</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>
