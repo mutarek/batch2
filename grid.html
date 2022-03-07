@@ -38,6 +38,8 @@
 	        display: flex;
 	        justify-content: space-around;
 	        flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
             }
     
 
@@ -66,12 +68,12 @@
 
 .post img{
 	border-radius: 15px;
+    max-width: 150px;
     height: 100px;
-    width: 150px;
 }
 
 .post p {
-	font-size: 18px;
+	font-size: 12px;
 	text-align: center;
 	font-weight: bold;
 	font-family: arial;
@@ -79,6 +81,7 @@
 
 
     </style>
+   <script src="data.js"></script> 
 </head>
 <body>
 
@@ -91,11 +94,22 @@
         <div class="menu">Menu</div>
         <div class="content">
             <div class="main-content">
-                <div class="post">
-                    <h1>Cox's Bazar</h1>
-                    <img src="https://vromonguide.com/wp-content/uploads/mv-karnaphuli-express-ship.jpg">
-                    <p>Dummy Content Dummy Another Content</p>
-                </div>
+
+               <script>
+                   var a = 0;
+                   size = data.length;
+                   while (a < size) {
+                    document.write(` <div class="post">
+                    <h1>${data[a]['title']['rendered']}</h1>
+                    <img src="${data[a]['jetpack_featured_media_url']}">
+                </div>`);  
+                    a++;
+                   }
+               </script>
+
+               
+
+                
             </div>
         </div>
         <div class="footer">footer</div>
