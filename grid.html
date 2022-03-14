@@ -19,10 +19,17 @@
         .header{
             grid-column: h;
             background-color: aqua;
+            text-align: center;
+        }
+        .header img{
+            width: 100px;
+            height: 80px;
+            border-radius: 25px;
+            float: left;
+            display: none;
         }
         .content{
             grid-column: c;
-            background-color: red;
             padding: 10px;
         }
         .menu{
@@ -79,41 +86,134 @@
 	font-family: arial;
 }
 
+h1{
+    text-transform: uppercase;
+}
+.author{
+    box-shadow: 2px 3px 5px 0px grey;
+    border: 1px solid white;
+    padding: 10px;
+}
+.author img{
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}
+.customauthor{
+    box-shadow: 2px 3px 5px 0px grey;
+    border: 1px solid white;
+    padding: 10px;
+}
+.customauthor img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding-left: 60px;
+}
+.customauthor h1{
+    text-align: center;
+}
+
+
+        .paidheader{
+            grid-column: h;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 15px;
+            margin: 5px;
+            box-shadow: 1px 2px 5px 0px gray;
+        }
+        .paidheader img{
+            width: 100px;
+            height: 80px;
+            border-radius: 25px;
+            float: left;
+        }
+        .tarekbaiya{
+            width: 100%;
+            height: auto;
+            border: 2px solid red;
+            text-align: center;
+            margin: 5px;
+        }
+        .tarekbaiya img{
+            height: 200px;
+            width: 200px;
+        }
+
+        .customtarekbaiya{
+            width: 25%;
+            height: auto;
+            text-align: center;
+            box-shadow: 2px 3px 10px 0px grey;
+            float: left;
+            margin: 5px;
+        }
+        .customtarekbaiya img{
+            height: 200px;
+            width: 200px;
+            border-radius: 25px;
+        }
+        
+        
 
     </style>
-   <script src="data.js"></script> 
 </head>
 <body>
 
     <div class="main-layout">
 
         <!--This div is for header-->
-        <div class="header">
+        <div id="mainhead" class="header">
             
+            <img src="https://www.pngitem.com/pimgs/m/187-1873795_free-logos-png-square-transparent-png.png" alt="">
+            
+            <h1>E-Learning</h1>
         </div>
-        <div class="menu">Menu</div>
+        <div class="menu">
+            <button onclick="showAdmin()">Admin</button>
+            <br>
+            <br>
+            <h1 id="click">CLick for change</h1>
+        </div>
         <div class="content">
             <div class="main-content">
+                <div id="mycontent" class="tarekbaiya">
+                    <h1>Tarek Baiya</h1>
+                    <img src="https://avatars.githubusercontent.com/u/41743928?v=4" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="mycontent"  class="tarekbaiya">
+                    <h1>Tarek Baiya</h1>
+                    <img src="https://avatars.githubusercontent.com/u/41743928?v=4" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="mycontent"  class="tarekbaiya">
+                    <h1>Tarek Baiya</h1>
+                    <img src="https://avatars.githubusercontent.com/u/41743928?v=4" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
 
-               <script>
-                   var a = 0;
-                   size = data.length;
-                   while (a < size) {
-                    document.write(` <div class="post">
-                    <h1>${data[a]['title']['rendered']}</h1>
-                    <img src="${data[a]['_embedded']['wp:featuredmedia'][0]['source_url']}">
-                </div>`);  
-                    a++;
-                   }
-               </script>
+                <div id="mycontent"  class="tarekbaiya">
+                    <h1>Tarek Baiya</h1>
+                    <img src="https://avatars.githubusercontent.com/u/41743928?v=4" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
 
-               
-
-                
+                <div id="mycontent"  class="tarekbaiya">
+                    <h1>Tarek Baiya</h1>
+                    <img src="https://avatars.githubusercontent.com/u/41743928?v=4" alt="">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
         </div>
-        <div class="footer">footer</div>
+        <div class="footer">
+            <h1>This is footer</h1>
+        </div>
     </div>
+
+
+    <script src="data.js"></script> 
     
 </body>
 </html>
